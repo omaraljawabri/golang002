@@ -1,19 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	var n, numerodeCasos, Total, Popular, Arquibancada, Geral, Cadeira, RendaDoJogo float64
+	var n, numerodeCasos, Total, PPopular, PCadeira, PGeral, PArquibancada, RendaDoJogo, Popular, Geral, Arquibancada, Cadeira float64
 	n = 1
 	fmt.Scan(&numerodeCasos)
 	for numerodeCasos >= n {
 		fmt.Scan(&Total)
-		fmt.Scan(&Popular)
-		fmt.Scan(&Geral)
-		fmt.Scan(&Arquibancada)
-		fmt.Scan(&Cadeira)
+		fmt.Scan(&PPopular)
+		fmt.Scan(&PGeral)
+		fmt.Scan(&PArquibancada)
+		fmt.Scan(&PCadeira)
+		Popular = (PPopular/100)*Total
+		Geral = (PGeral/100)*Total
+		Cadeira = (PCadeira/100)*Total
+		Arquibancada = (PArquibancada/100)*Total
 		RendaDoJogo = Popular + Geral*5 + Arquibancada*10 + Cadeira*20
-		fmt.Println("A RENDA DO JOGO Nº", n, "E = ", RendaDoJogo)
+		fmt.Println("A RENDA DO JOGO Nº", n, "E = ", math.Round(RendaDoJogo*100)/100)
 		n++
 	}
 }
