@@ -21,7 +21,7 @@ func main(){
 					fmt.Println(x,"^2 = ", x*x)
 					x = x + 2					
 				}
-			}
+			} 
 		}else{
 			fmt.Println("Número Inválio!")
 		}

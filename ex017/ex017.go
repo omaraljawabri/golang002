@@ -17,6 +17,6 @@ func main() {
 			n = n + 1
 		}
 	} else{
-		fmt.Println("O Numero não é par!")
+		fmt.Println("O Primeiro Numero não é par!")
 	}
 }
