@@ -9,10 +9,10 @@ func main(){
 	var Nota float64
 	var Conceito string
 	fmt.Scan(&Nota)
-	if Nota > 9 {
+	if Nota >= 9 {
 		Conceito = "A"
 	} else if Nota > 7.5 {
-		if Nota <= 9 {
+		if Nota < 9 {
 			Conceito = "B"	
 		}
 	} else if Nota >= 6 {
