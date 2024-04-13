@@ -6,13 +6,15 @@ import (
 )
 
 func main(){
-	var n, QtdDeValores, ValorFahrenheit, ValorCelsius float64
-	n = 1
-	fmt.Scan(&QtdDeValores)
-	for QtdDeValores >= n{
-		fmt.Scan(&ValorFahrenheit)
-		ValorCelsius = 5*(ValorFahrenheit-32)/9
-		fmt.Println (ValorFahrenheit, "FAHRENHEIT EQUIVALE A ", (math.Round(ValorCelsius*100)/100), "CELSIUS")
-		n++
+	var n int
+	fmt.Scanln(&n)
+	temp := make([]float64, n, n)
+	for i := 0; i < n; i++ {
+		fmt.Scanln(&temp[i])
+	}
+	for i := 0; i < n; i++ {
+		var celsius float64
+		celsius = 5*(temp[i]-32)/9
+		fmt.Println(temp[i], "FAHRENHEIT EQUIVALE A", math.Round(celsius*100)/100, "CELSIUS" )
 	}
 }
