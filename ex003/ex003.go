@@ -20,7 +20,7 @@ func main(){
 		panic(err)
 	}
 	if a < 10 && b < 10 && c < 10{
-		fmt.Println(z, i*i)
+		fmt.Print(z,", ",i*i)
 	}else{
 		fmt.Println("Digito Inválido!")
 	}

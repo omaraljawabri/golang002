@@ -13,5 +13,5 @@ func main() {
 	} else {
 		Reajuste = SalarioFuncionario * 1.3
 	}
-	fmt.Println("SALARIO COM REAJUSTE = ", math.Round(Reajuste*100)/100)
+	fmt.Println("SALÁRIO COM REAJUSTE = ", math.Round(Reajuste*100)/100)
 }

@@ -20,7 +20,7 @@ func main() {
 		Cadeira = (PCadeira/100)*Total
 		Arquibancada = (PArquibancada/100)*Total
 		RendaDoJogo = Popular + Geral*5 + Arquibancada*10 + Cadeira*20
-		fmt.Println("A RENDA DO JOGO Nº", n, "E = ", math.Round(RendaDoJogo*100)/100)
+		fmt.Println("A RENDA DO JOGO Nº", n, "E = ", math.Round(RendaDoJogo*1000)/1000)
 		n++
 	}
 }

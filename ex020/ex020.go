@@ -8,5 +8,5 @@ func main(){
 	fmt.Scan(&Minutos)
 	fmt.Scan(&Segundos)
 	TempoTotal = Horas*3600 + Minutos*60 + Segundos
-	fmt.Println("O TEMPO EM SEGUNDOS E = ", TempoTotal)
+	fmt.Println("O TEMPO EM SEGUNDOS É = ", TempoTotal)
 }

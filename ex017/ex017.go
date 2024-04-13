@@ -11,8 +11,8 @@ func main() {
 	fmt.Scan(&x)
 	fmt.Scan(&y)
 	if math.Mod(x, 2) == 0 {
-		for y > n {
-			fmt.Println(x)
+		for y > n{
+		fmt.Print(x, " ")
 			x = x + 2
 			n = n + 1
 		}

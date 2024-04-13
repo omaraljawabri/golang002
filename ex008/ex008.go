@@ -14,5 +14,5 @@ func main() {
 	Al = 2 * pi * RaioLata * Altura
 	At = 2*Ac + Al
 	Custo = 100 * At
-	fmt.Println("O VALOR DE CUSTO E = ", math.Round(Custo*100)/100)
+	fmt.Println("O VALOR DE CUSTO É = ", math.Round(Custo*100)/100)
 }
