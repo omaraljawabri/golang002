@@ -15,7 +15,7 @@ func main() {
 		for y > n{
 		fmt.Printf("%v ", x)
 			x = x + 2
-			n = n + 1
+			n++
 		}
 	} else{
 		fmt.Println("O Primeiro Numero não é par!")

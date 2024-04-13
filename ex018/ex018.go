@@ -13,7 +13,7 @@ func main() {
 	for n >= x {
 		SomaNumeros = SomaNumeros + a1 + r
 		r = r + r1
-		x = x + 1
+		x++
 	}
 	fmt.Println(SomaNumeros)
 }

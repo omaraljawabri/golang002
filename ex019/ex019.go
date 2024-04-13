@@ -17,7 +17,7 @@ func main() {
 	if n > 1 {
 		for n >= x {
 			Soma = Soma + 1/x
-			x = x + 1
+			x++
 		}
 	} else {
 		fmt.Println("Numero Invalido!")
