@@ -23,9 +23,10 @@ func main(){
 				}
 			} 
 		}else{
-			fmt.Println("Número Inválio!")
+			fmt.Println("Número Inválido!")
 		}
 	}else{
 		fmt.Println("Número Inválido!")
 	}
 }
+
