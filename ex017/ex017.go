@@ -6,13 +6,14 @@ import (
 )
 
 func main() {
-	var n, x, y float64
+	var n, y int32
+	var x float64
 	n = 0
 	fmt.Scan(&x)
 	fmt.Scan(&y)
 	if math.Mod(x, 2) == 0 {
 		for y > n{
-		fmt.Print(x, " ")
+		fmt.Printf("%v ", x)
 			x = x + 2
 			n = n + 1
 		}
