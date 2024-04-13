@@ -12,13 +12,10 @@ func main(){
 	fmt.Scanln(&n3)
 	var z string = n1 + n2 + n3
 	var a, b, c, i int
-	a, err := strconv.Atoi(n1)
-	b, err = strconv.Atoi(n2)
-	c, err = strconv.Atoi(n3)
-	i, err = strconv.Atoi(z)
-	if err != nil{
-		panic(err)
-	}
+	a, _ = strconv.Atoi(n1)
+	b, _ = strconv.Atoi(n2)
+	c, _ = strconv.Atoi(n3)
+	i, _ = strconv.Atoi(z)
 	if a < 10 && b < 10 && c < 10{
 		fmt.Print(z,", ",i*i)
 	}else{
