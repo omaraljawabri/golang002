@@ -5,18 +5,25 @@ import (
 )
 
 func main() {
-	var n, numerodeCasos int
-	var Total, PPopular, PCadeira, PGeral, PArquibancada, RendaDoJogo, Popular, Geral, Arquibancada, Cadeira float64
-	n = 1
+	var numerodeCasos int
+	var RendaDoJogo, Popular, Geral, Cadeira, Arquibancada float64
 	fmt.Scanln(&numerodeCasos)
-	for numerodeCasos >= n {
-		fmt.Scanln(&Total, &PPopular, &PGeral, &PArquibancada, &PCadeira)
-		Popular = (PPopular/100)*Total
-		Geral = (PGeral/100)*Total
-		Cadeira = (PCadeira/100)*Total
-		Arquibancada = (PArquibancada/100)*Total
+	Total := make([]float64, numerodeCasos, numerodeCasos)
+	PPopular := make([]float64, numerodeCasos, numerodeCasos)
+	PGeral := make([]float64, numerodeCasos, numerodeCasos)
+	PArquibancada := make([]float64, numerodeCasos, numerodeCasos)
+	PCadeira := make([]float64, numerodeCasos, numerodeCasos)
+	for i := 0; i < numerodeCasos; i++ {
+		fmt.Scanln(&Total[i], &PPopular[i], &PGeral[i], &PArquibancada[i], &PCadeira[i])
+	}
+	n := 1
+	for i := 0; i < numerodeCasos; i++ {
+		Popular = (PPopular[i]/100)*Total[i]
+		Geral = (PGeral[i]/100)*Total[i]
+		Cadeira = (PCadeira[i]/100)*Total[i]
+		Arquibancada = (PArquibancada[i]/100)*Total[i]
 		RendaDoJogo = Popular + Geral*5 + Arquibancada*10 + Cadeira*20
-		fmt.Printf("A RENDA DO JOGO Nº %d É = %.2f \n", n, RendaDoJogo)
+		fmt.Printf("A RENDA DO JOGO Nº %d É = %.2f\n", n, RendaDoJogo)
 		n++
 	}
 }
