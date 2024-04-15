@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main(){
@@ -12,5 +11,5 @@ func main(){
 	fmt.Scan(&ValorC)
 	fmt.Scan(&ValorD)
 	determinante = ValorA*ValorD - ValorB*ValorC
-	fmt.Println("O VALOR DO DETERMINANTE E = ", math.Round(determinante*100)/100)
+	fmt.Printf("O VALOR DO DETERMINANTE É = %.2f", determinante)
 }

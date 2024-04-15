@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main(){
-	var Horas, Minutos, Segundos, TempoTotal float64
+	var Horas, Minutos, Segundos, TempoTotal int
 	fmt.Scan(&Horas)
 	fmt.Scan(&Minutos)
 	fmt.Scan(&Segundos)

@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main(){
@@ -15,6 +14,6 @@ func main(){
 	for i := 0; i < n; i++ {
 		var celsius float64
 		celsius = 5*(temp[i]-32)/9
-		fmt.Println(temp[i], "FAHRENHEIT EQUIVALE A", math.Round(celsius*100)/100, "CELSIUS" )
+		fmt.Printf("%.2f FAHRENHEIT EQUIVALE A %.2f CELSIUS\n", temp[i], celsius)
 	}
 }

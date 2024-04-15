@@ -6,12 +6,10 @@ import (
 )
 
 func main() {
-	var ContaCliente int32
+	var ContaCliente int64
 	var ConsumoAgua, ValorConta, Excedente float64
 	var TipoConsumidor string
-	fmt.Scan(&ContaCliente)
-	fmt.Scan(&ConsumoAgua)
-	fmt.Scan(&TipoConsumidor)
+	fmt.Scan(&ContaCliente, &ConsumoAgua, &TipoConsumidor)
 	switch TipoConsumidor {
 	case "R":
 		ValorConta = 5 + 0.05*ConsumoAgua

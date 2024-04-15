@@ -3,11 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	var x, a1, r, n, r1, SomaNumeros float64
+	var x, a1, r, n, r1, SomaNumeros int
 	x = 2
-	fmt.Scan(&a1)
-	fmt.Scan(&r)
-	fmt.Scan(&n)
+	fmt.Scanln(&a1, &r, &n)
 	SomaNumeros = a1
 	r1 = r
 	for n >= x {

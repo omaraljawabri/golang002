@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
@@ -13,5 +12,5 @@ func main() {
 	} else {
 		Reajuste = SalarioFuncionario * 1.3
 	}
-	fmt.Println("SALÁRIO COM REAJUSTE = ", math.Round(Reajuste*100)/100)
+	fmt.Printf("SALÁRIO COM REAJUSTE = %.2f", Reajuste)
 }

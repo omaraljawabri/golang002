@@ -9,5 +9,5 @@ func main() {
 	var Horas, Valor float64
 	fmt.Scan(&Horas)
 	Valor = ((Horas - math.Mod(Horas, 3))/3)*10 + math.Mod(Horas, 3)*5
-	fmt.Println("O VALOR A PAGAR E = ", math.Round(Valor*100)/100)
+	fmt.Printf("O VALOR A PAGAR É = %.2f", Valor)
 }

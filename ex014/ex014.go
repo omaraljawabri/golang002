@@ -11,5 +11,5 @@ func main() {
 	fmt.Scan(&Aresta)
 	Ab = (3 * math.Pow(Aresta, 2) * math.Sqrt(3))/2
 	Volume = Ab*Altura/3
-	fmt.Println("O VOLUME DA PIRÂMIDE É = ", math.Round(Volume*100)/100, " METROS CÚBICOS")
+	fmt.Printf("O VOLUME DA PIRÂMIDE É = %.2f METROS CÚBICOS", Volume)
 }
