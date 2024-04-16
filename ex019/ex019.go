@@ -21,5 +21,4 @@ func main() {
 	} else {
 		fmt.Println("Número Inválido!")
 	}
-	editei aqui editou ai?
 }
