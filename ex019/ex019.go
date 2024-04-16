@@ -5,11 +5,6 @@ import (
 	"math"
 )
 
-func RoundFloat(val float64, precision uint) float64{
-	ratio := math.Pow(10, float64(precision))
-	return math.Round(val*ratio)/ratio
-}
-
 func main() {
 	var n, f int
 	var Soma, x float64
@@ -22,7 +17,7 @@ func main() {
 			x++
 			f++
 		}
-		fmt.Println(RoundFloat(Soma, 6))
+		fmt.Println(math.Round(Soma*1000000)/1000000)
 	} else {
 		fmt.Println("Número Inválido!")
 	}
