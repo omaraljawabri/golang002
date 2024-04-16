@@ -11,16 +11,19 @@ func RoundFloat(val float64, precision uint) float64{
 }
 
 func main() {
-	var Soma, x, n float64
+	var n, f int
+	var Soma, x float64
+	f = 1
 	x = 1
 	fmt.Scan(&n)
-	if n > 1 {
-		for n >= x {
+	if n >= 1 {
+		for n >= f{
 			Soma = Soma + 1/x
 			x++
+			f++
 		}
+		fmt.Println(RoundFloat(Soma, 6))
 	} else {
 		fmt.Println("Número Inválido!")
 	}
-fmt.Println(RoundFloat(Soma, 6))
 }

@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
@@ -30,5 +29,5 @@ func main() {
 	}
 
 	fmt.Println("CONTA = ", ContaCliente)
-	fmt.Println("VALOR DA CONTA = ", math.Round(ValorConta*100)/100)
+	fmt.Printf("VALOR DA CONTA = %.2f", ValorConta)
 }

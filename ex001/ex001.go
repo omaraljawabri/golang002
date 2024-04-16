@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
@@ -10,10 +9,10 @@ func main() {
 	fmt.Scanln(&nota1, &nota2, &nota3)
 	MEDIA = (nota1 + nota2 + nota3) / 3
 	if MEDIA >= 6 {
-		fmt.Println("MEDIA = ", math.Round(MEDIA*100)/100)
+		fmt.Printf("MÉDIA = %.2f\n", MEDIA )
 		fmt.Println("APROVADO")
-	} else if MEDIA <= 6 {
-		fmt.Println("MEDIA = ", math.Round(MEDIA*100)/100)
+	} else if MEDIA < 6 {
+		fmt.Printf("MÉDIA = %.2f\n", MEDIA)
 		fmt.Println("REPROVADO")
 	}
 }

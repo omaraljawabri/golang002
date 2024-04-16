@@ -11,5 +11,5 @@ func main(){
 	fmt.Scan(&CoefB)
 	fmt.Scan(&CoefC)
 	delta = math.Pow(CoefB, 2) - 4*CoefA*CoefC
-	fmt.Printf("O VALOR DE DELTA É = %.2f", delta) 
+	fmt.Printf("O VALOR DE DELTA É = %.2f\n", delta) 
 }
